@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="SignUp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/suName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:drawableRight="@drawable/signup_name"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/suPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/signup_phone"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="@+id/suUsername"
+        app:layout_constraintStart_toStartOf="@+id/suUsername"
+        app:layout_constraintTop_toBottomOf="@+id/suUsername" />
+
+    <EditText
+        android:id="@+id/suUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/login_person"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/suName"
+        app:layout_constraintStart_toStartOf="@+id/suName"
+        app:layout_constraintTop_toBottomOf="@+id/suName" />
+
+    <EditText
+        android:id="@+id/suPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/lock_person"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/suPhone"
+        app:layout_constraintStart_toStartOf="@+id/suPhone"
+        app:layout_constraintTop_toBottomOf="@+id/suPhone" />
+
+    <Button
+        android:id="@+id/btnSu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Signup"
+        android:onClick="setSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/suPassword"
+        app:layout_constraintStart_toStartOf="@+id/suPassword"
+        app:layout_constraintTop_toBottomOf="@+id/suPassword" />
+
+    <TextView
+        android:id="@+id/loginHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/loginhere"
+        app:layout_constraintEnd_toEndOf="@+id/suPassword"
+        app:layout_constraintStart_toStartOf="@+id/suPassword"
+        app:layout_constraintTop_toBottomOf="@+id/btnSu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
