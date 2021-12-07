@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         String id = getResources().getResourceEntryName(v.getId());
         Intent intent = new Intent(MainActivity.this, AccountActivity.class);
         startActivity(intent);
-        Toast.makeText(getApplicationContext(), id, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), id, Toast.LENGTH_SHORT).show();
     }
 
     @Override

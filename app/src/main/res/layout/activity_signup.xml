@@ -36,15 +36,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <EditText
-        android:id="@+id/suPhone"
+        android:id="@+id/suPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:drawableRight="@drawable/signup_phone"
+        android:drawableRight="@drawable/lock_person"
         android:ems="10"
-        android:hint="Phone Number"
-        android:inputType="number"
-        android:maxLength="10"
+        android:hint="Password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/suUsername"
         app:layout_constraintStart_toStartOf="@+id/suUsername"
         app:layout_constraintTop_toBottomOf="@+id/suUsername" />
@@ -63,17 +62,17 @@
         app:layout_constraintTop_toBottomOf="@+id/suName" />
 
     <EditText
-        android:id="@+id/suPassword"
+        android:id="@+id/suConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:drawableRight="@drawable/lock_person"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/suPhone"
-        app:layout_constraintStart_toStartOf="@+id/suPhone"
-        app:layout_constraintTop_toBottomOf="@+id/suPhone" />
+        app:layout_constraintEnd_toEndOf="@+id/suPassword"
+        app:layout_constraintStart_toStartOf="@+id/suPassword"
+        app:layout_constraintTop_toBottomOf="@+id/suPassword" />
 
     <Button
         android:id="@+id/btnSu"
@@ -82,9 +81,9 @@
         android:layout_marginTop="10dp"
         android:text="Signup"
         android:onClick="setSignUp"
-        app:layout_constraintEnd_toEndOf="@+id/suPassword"
-        app:layout_constraintStart_toStartOf="@+id/suPassword"
-        app:layout_constraintTop_toBottomOf="@+id/suPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/suConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/suConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/suConfirmPassword" />
 
     <TextView
         android:id="@+id/loginHere"
@@ -92,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/loginhere"
-        app:layout_constraintEnd_toEndOf="@+id/suPassword"
-        app:layout_constraintStart_toStartOf="@+id/suPassword"
+        app:layout_constraintEnd_toEndOf="@+id/suConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/suConfirmPassword"
         app:layout_constraintTop_toBottomOf="@+id/btnSu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
